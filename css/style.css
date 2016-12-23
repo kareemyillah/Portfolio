@@ -1,0 +1,383 @@
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+body{
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.container {
+  max-width: 100%;
+  text-align: center;
+  height: auto;
+} 
+section {
+  display: block;
+  border-bottom: 4px solid #fff;
+}
+
+/**********************************************/
+/*Home of Portfolio*/
+/**********************************************/
+
+.home {
+  background: url("../images/home1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  filter: grayscale(1);
+  height: 700px;
+  position: relative;
+
+}
+header nav ul li {
+	display:inline-block;
+  padding: 10px 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.link-bar {
+  text-align: center;
+  padding: 0 20px 0 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 60px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.social-icons {
+  float:right;
+  padding: 10px 10px;
+}
+.navigation{
+  float: left;
+  padding: 10px 10px;
+  
+}
+a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.description{
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 400px;
+  height: 100px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.description h1{
+  font-weight: 900;
+  font-size: 40px;
+}
+.description h2{
+  font-weight: 800;
+  font-size: 30px;
+}
+
+/**********************************************/
+/*About section of Porfolio*/
+/**********************************************/
+
+.aboutsection {
+  background: url(../images/determ.jpg) center;
+  filter: grayscale(1);
+  position: relative;
+  float: right;
+  background-color: #fff;
+  background-size: cover;
+  height: 700px;
+  width: 50%;
+  }
+.aboutme {
+  position: relative;
+  float: left;
+  right: 0;
+  height: 700px;
+  width: 50%;
+  background: url(../images/Sitl.svg) bottom;
+  background-size: cover;
+}
+
+.aboutme h1 {
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+}
+.aboutme p {
+  font-weight: 400;
+  font-size: 23px; 
+}
+
+/**********************************************/
+/*gallery section of Porfolio*/
+/**********************************************/
+.slideshow-container {
+  max-width: 10000px;
+}
+
+.title {
+  padding: 10px;
+  text-align: center;
+  max-width: 100%;
+}
+.title h1 {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.photosofme img { 
+  width: 25%;
+  /*padding: 10px 10px 10px 10px;*/
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.photosofme img:hover {
+    filter: none; 
+  }
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/**********************************************/
+/*gallery section of Porfolio*/
+/**********************************************/
+
+.contact{
+  background: url(../images/contactme.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.contacthead {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  right: 0;
+  color: rgb(0, 0, 0);
+}
+fieldset {
+  border: 0;
+  margin: 24px 0;
+}
+legend {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+form {
+  max-width: 700px;
+  position: relative;
+  margin: 0 auto 0 auto;
+  padding: 0 20px;
+}
+form div {
+  margin: 20px 0;
+}
+label {
+  display: block;
+  color: #94aab0;
+  margin-bottom: 10px;
+}
+input,
+textarea,
+select,
+label {
+  font-weight: 800;
+  font-size: 1.875rem;
+  color: rgb(0, 0, 0);
+}
+input[type="text"],
+input[type="email"],
+textarea,
+select,
+legend {
+  display: block;
+  font-size: 1.475em;
+  width: 100%;
+  font-weight: 400;
+}
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  padding: 12px;
+  border: 1px solid #cfd9db;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: .25em;
+  color: rgb(255,255,255);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #fff;
+}
+textarea {
+  min-height: 200px;
+  resize: vertical;
+  overflow: auto;
+}
+input[type="submit"] {
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: .25em;
+  padding: 16px 50px;
+  color: #ffffff;
+  font-weight: 400;
+  /*float: right;*/
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: rgb(0, 0, 0);
+}
+input[type="submit"]:focus {
+  outline: none;
+  background: rgb(0, 0, 0);
+}
+input[type="submit"]:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/**********************************************/
+/*media*/
+/**********************************************/
+
+/*@media screen and (min-width: 908px){
+  .aboutme {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+  }
+}*/
+@media screen and (max-width: 907px) {
+  .description {
+    /*top: 80px;*/
+  }
+  .aboutsection {
+    background: url(../images/about-down.jpg) no-repeat center center fixed;
+  }
+  .aboutme {
+    color: rgba(0, 0, 0, 0.7);
+    width: 430px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .home {
+    background: url(../images/home2.jpg) no-repeat left center fixed;
+  }
+  .link-bar {
+    font-size: 22px;
+    padding: 0;
+    background-color: rgba(255,255,256, 0.4)
+  }
+  .description {
+    /*top: 80px;*/
+  }
+  .aboutsection {
+    background: url(../images/about-down.jpg) no-repeat center center fixed;
+  }
+  .aboutme {
+    color: rgba(0, 0, 0, 0.7);
+    width: 400px;
+  }
+  .aboutme p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 530px){
+  .home {
+    background: url(../images/lookup.jpg) no-repeat center center fixed;
+  }
+  .description {
+    top: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.59);
+  }
+  header nav ul li a{
+    color: rgba(0, 0, 0, 0.59);
+  }
+  .link-bar {
+    font-size: 18px;
+    padding: 0;
+  }
+@media screen and (max-width: 569px){
+  .link-bar {
+    font-size: 25px;
+    padding: 0;
+  }
+   .aboutsection {
+    background: url(../images/about-down.jpg) no-repeat center center fixed;
+  }
+  .aboutme {
+    color: rgba(0, 0, 0, 0.7);
+    width: 350px;
+  }
+  .aboutme p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 530px){
+  .link-bar {
+    font-size: 18px;
+    padding: 0;
+  }
+   .aboutsection {
+    background: url(../images/about-down.jpg) no-repeat center center fixed;
+  }
+  .aboutme {
+    color: rgba(0, 0, 0, 0.7);
+    width: 350px;
+  }
+  .aboutme p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 458px){
+  .home {
+    background: url(../images/lookup.jpg) no-repeat center center fixed;
+  }
+  .description {
+    top: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.59);
+  }
+  header nav ul li a{
+    color: rgba(0, 0, 0, 0.59);
+  }
+  .link-bar {
+    font-size: 18px;
+    padding: 0;
+  }
+   .aboutsection {
+    background: url(../images/about-down.jpg) no-repeat center center fixed;
+  }
+  .aboutme {
+    color: rgba(0, 0, 0, 0.7);
+    width: 330px;
+  }
+  .aboutme p {
+    font-size: 18px;
+  }
+}
