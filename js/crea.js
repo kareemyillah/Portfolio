@@ -1,10 +1,18 @@
 $(document).ready(function() {
 
-	// hide input text
-	$("#1").click(function(){
-		$("#user1").hide();
-		
+	// Link will slide up
+	$("a").click(function(){
+		// event.preventDefault();
+	$("#about").slideUp("5000");
+		console.log("slide complete");
 	});
+	
+	
+
+
+
+	// hide input text
+	
 
 	// show input text on click
 	
