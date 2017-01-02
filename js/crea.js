@@ -1,21 +1,14 @@
 $(document).ready(function() {
 
-	// Link will slide up
-	$("a").click(function(){
-		// event.preventDefault();
-	$("#about").slideUp("5000");
-		console.log("slide complete");
-	});
-	
-	
+	$('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+  	columnWidth: '.gridsizer'
+  }
+});
 
-
-
-	// hide input text
-	
-
-	// show input text on click
-	
  
 });
 
