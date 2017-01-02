@@ -1,13 +1,14 @@
 $(document).ready(function() {
 
-	// hide input text
-	$("#1").click(function(){
-		$("#user1").hide();
-		
-	});
+	$('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+  	columnWidth: '.gridsizer'
+  }
+});
 
-	// show input text on click
-	
  
 });
 
