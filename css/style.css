@@ -153,26 +153,15 @@ a {
   float: left;
   height: 100px;
   border: 2px solid #333;
-  border-color: red;
 }
 
-.gallery-item--width2 {width: 50%;}
-.gallery-item--height2 {height: 400px;}
+.gallery-item--width2 {width: 50%;} /* 2 columns wide*/
+.gallery-item--width3 {width: 75%;} /* 3 columns wide*/ 
+.gallery-item--width4 {width: 100%;} /* 4 columns wide*/ 
+
+.gallery-item--height2 {height: 300px;}
 .gallery-item--height3 {height: 250px}
 
-
-
-
-
-
-
-
-
-
-
-.photogallery {
-  /*float: left;*/
-}
 
 .photogallery img { 
   /*width: 25%;*/
